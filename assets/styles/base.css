@@ -1,0 +1,147 @@
+body {
+	font-family: fantasy;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.left-column {
+  float: left;
+  width: 70%;
+  padding: 10px;
+}
+
+.right-column {
+  float: left;
+  width: 27%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+	padding: 15px;
+	margin: -10px 0px 0px -8px;
+	background-color: #0066ff;
+	position: fixed;
+	width: 100%;
+}
+
+.header .logo {
+	margin-top: 7px;
+}
+
+.main-content {
+	padding-top: 75px;
+}
+
+/* Styles for stock ticker */
+
+.stock-ticker {
+	float: right;
+}
+
+.stock-ticker .stock-price-presenter {
+	border-radius: 5px;
+	padding: 5px;
+	display: inline-block;
+	margin: 5px 0px;
+}
+
+.stock-ticker #MSFT.stock-price-presenter {
+	background-color: #737373;
+}
+
+.stock-ticker #GOOGL.stock-price-presenter {
+	background-color: #F4B400;
+}
+
+.stock-ticker #BTCUSD.stock-price-presenter {
+	background-color: #514100;
+}
+
+.stock-ticker .stock-price-presenter .stock-symbol,
+.stock-ticker .stock-price-presenter .stock-price-container {
+	padding: 0px 5px;
+}
+
+.stock-ticker .stock-price-presenter .stock-symbol {
+	color: #FFF;
+}
+
+.stock-ticker .stock-price-presenter .stock-symbol,
+.stock-ticker .stock-price-presenter .stock-price-container,
+.stock-ticker .stock-price-presenter .stock-price,
+.stock-ticker .stock-price-presenter .stock-price-change {
+	display: inline-block;
+}
+
+.stock-ticker .stock-price-presenter .stock-price-container {
+	background: #FFF;
+	border-radius: 5px;
+}
+
+/* Styles for subscribe form */
+
+.form-container {
+	margin: 30px 15px 100px;
+	border: 1px solid #CCC;
+	padding: 5px 10px 0px 10px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.form-container h3 {
+	margin: 0px -10px 35px -10px;
+	padding: 20px 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+#subscribe .input-group {
+	display: block;
+	margin: 5px 10px;
+}
+
+#subscribe .input-group label {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#subscribe .input-group input, #subscribe .input-group select {
+	border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 2px;
+    font-size: 16px;
+}
+
+#subscribe button {
+	margin: 20px auto 10px;
+	padding: 5px 15px;
+	border-radius: 3px;
+	font-size: 16px;
+	background-color: #0066ff;
+	border: 1px solid #0066ff;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.toaster {
+	position: fixed;
+    bottom: 0px;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px;
+    color: #FFF;
+    display: none;
+}
+
+.toaster.success {
+	background-color: #28a745;
+}
